@@ -138,12 +138,12 @@ p sup {
     font-weight: bold;
 }
 
-.verdict-misleading {
+.verdict-exaggeration {
     color: #f39c12; /* Orange */
     font-weight: bold;
 }
 
-.verdict-mixed {
+.verdict-misleading {
     color: #e6b800; /* Yellow */
     font-weight: bold;
 }
@@ -190,3 +190,123 @@ p sup {
     color: #555;
     font-weight: bold;
 }
+
+.bs-report {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #f9f9f9;
+    transition: background 0.3s;
+}
+
+.bs-report details summary {
+    padding: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    background: #f9f9f9;
+    transition: background 0.3s;
+}
+
+.bs-report details[open] summary {
+    background: #f9f9f9;
+}
+
+.bs-content {
+    padding: 15px;
+}
+
+.sources summary {
+    cursor: pointer;
+    color: #0077cc;
+    text-decoration: underline;
+}
+
+.bs-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 16px;
+}
+
+.bs-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.bs-table tr:last-child td {
+    border-bottom: none;
+}
+
+.bs-table td:first-child {
+    font-weight: bold;
+    width: 150px;
+    text-align: center;
+}
+
+/* Full-Sized Article Styling */
+.article-full {
+    display: flex;
+    align-items: center; /* Vertical alignment */
+    justify-content: flex-start; /* Align content to the left inside the box */
+    background: white;
+    margin: 1rem auto; /* Center the entire box horizontally */
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px; /* Optional: Keeps it from stretching too wide */
+    text-align: left; /* Makes sure text is aligned left */
+    width: 100%; /* Makes sure the container is responsive */
+}
+
+.article-full img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover; 
+    margin-right: 1.5rem; /* Keeps space between image and text */
+    border-radius: 8px;
+}
+
+
+/* Half-Sized Articles Grid */
+.articles-half-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.article-half {
+    background: white;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.article-half img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.article-half h3 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.article-half a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: #111;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.article-half a:hover {
+    background: #333;
+}
+
