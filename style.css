@@ -21,7 +21,7 @@ header {
     text-align: center;
     background: #111;
     color: white;
-    padding: 2rem 0;
+    padding: 0rem 0;
 }
 
 header h1 {
@@ -39,7 +39,7 @@ header p {
 nav {
     background: #333;
     text-align: center;
-    padding: 1rem 0;
+    padding: 0rem 0;
 }
 
 nav a {
