@@ -246,16 +246,15 @@ p sup {
     text-align: center;
 }
 
-/* Full-Sized Article Styling */
 .article-full {
     display: flex;
     align-items: center; /* Vertical alignment */
     justify-content: flex-start; /* Align content to the left inside the box */
     background: white;
-    margin: 1rem auto; /* Center the entire box horizontally */
+    margin: 0rem auto; /* Center the entire box horizontally */
     padding: 2rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 900px; /* Optional: Keeps it from stretching too wide */
+    max-width: 1000px; /* Optional: Keeps it from stretching too wide */
     text-align: left; /* Makes sure text is aligned left */
     width: 100%; /* Makes sure the container is responsive */
 }
@@ -268,14 +267,12 @@ p sup {
     border-radius: 8px;
 }
 
-
-/* Half-Sized Articles Grid */
 .articles-half-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    margin-top: 2rem;
+    gap: 1rem; /* Match the full article spacing */
 }
+
 
 .article-half {
     background: white;
